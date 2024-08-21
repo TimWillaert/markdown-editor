@@ -13,10 +13,6 @@ export default function MarkdownEditor() {
   );
   const debouncedInput = useDebounce(inputText, 500);
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setInputText(event.target.value);
-  };
-
   /* Save the Markdown text to local storage, using a debounce to avoid excessive writes */
   useEffect(() => {
     localStorage.setItem("markdown", debouncedInput);
@@ -24,7 +20,7 @@ export default function MarkdownEditor() {
 
   return (
     <div className="flex h-full w-full flex-col gap-2 bg-neutral-100 p-2 md:flex-row md:p-6 lg:p-10 xl:p-32">
-      <MarkdownInput value={inputText} onChange={handleInputChange} />
+      <MarkdownInput value={inputText} onChange={setInputText} />
       <MarkdownRenderer input={inputText} />
     </div>
   );

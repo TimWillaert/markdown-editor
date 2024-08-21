@@ -14,7 +14,7 @@ interface MarkdownRendererProps {
 export default function MarkdownRenderer({ input }: MarkdownRendererProps) {
   return (
     <div className="panel h-full w-full overflow-auto">
-      <div className="prose prose-sm max-w-none">
+      <div className="prose prose-sm md:prose-base max-w-none">
         <Markdown>{input}</Markdown>
       </div>
     </div>
