@@ -11,7 +11,7 @@ interface MarkdownInputProps {
 export default function MarkdownInput({ value, onChange }: MarkdownInputProps) {
   return (
     <textarea
-      className="h-1/2 w-full resize-none rounded-lg border border-neutral-300 bg-neutral-100 p-2"
+      className="panel h-full w-full resize-none"
       placeholder="Type some Markdown here..."
       value={value}
       onChange={(e) => onChange(e.target.value)}
