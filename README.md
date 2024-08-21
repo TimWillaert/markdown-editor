@@ -11,5 +11,5 @@
 - React
 - TypeScript
 - Tailwind
-  - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugin which adds basic styling for Markdown components
-- [react-markdown](https://github.com/remarkjs/react-markdown) to convert the input string to HTML components
+  - [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugin which adds basic styling for Markdown elements
+- [react-markdown](https://github.com/remarkjs/react-markdown) to convert the input string to HTML elements
