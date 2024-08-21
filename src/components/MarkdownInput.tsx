@@ -1,6 +1,6 @@
 interface MarkdownInputProps {
   value: string;
-  onChange: (value: string) => void;
+  onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 /*
@@ -14,7 +14,7 @@ export default function MarkdownInput({ value, onChange }: MarkdownInputProps) {
       className="panel h-full w-full resize-none"
       placeholder="Type some Markdown here..."
       value={value}
-      onChange={(e) => onChange(e.target.value)}
+      onChange={(e) => onChange(e)}
     />
   );
 }
