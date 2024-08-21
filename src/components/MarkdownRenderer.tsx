@@ -13,8 +13,8 @@ interface MarkdownRendererProps {
 */
 export default function MarkdownRenderer({ input }: MarkdownRendererProps) {
   return (
-    <div className="panel h-full w-full overflow-scroll">
-      <div className="prose prose-sm">
+    <div className="panel h-full w-full overflow-auto">
+      <div className="prose prose-sm max-w-none">
         <Markdown>{input}</Markdown>
       </div>
     </div>
