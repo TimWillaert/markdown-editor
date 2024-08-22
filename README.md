@@ -6,6 +6,8 @@
 2. Run `npm i` to install dependencies
 3. Run `npm run dev` to start the project
 
+Note: this project was made using Node version `20.16.0`
+
 ## Used libraries/technologies
 
 - React
